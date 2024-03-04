@@ -6,7 +6,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 WORKDIR /SolonaVolumeBot
 
 COPY ./requirements.txt ./
-RUN pip install gunicorn==19
+RUN pip install gunicorn==21.2.0
 RUN pip install --upgrade pip
 RUN pip install --no-cache-dir -r ./requirements.txt
 RUN pip install git+https://github.com/benoitc/gunicorn.git
